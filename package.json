@@ -1,0 +1,19 @@
+{
+  "name": "fullstack-open-vue",
+  "packageManager": "yarn@3.0.1",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "next",
+    "vuepress-vite": "next"
+  },
+  "dependencies": {
+    "@vue/component-compiler-utils": "^3.2.2",
+    "@vuepress/plugin-register-components": "next",
+    "@vuepress/plugin-search": "next",
+    "@vuepress/shared-utils": "^1.8.2",
+    "@vuepress/utils": "^2.0.0-alpha.1"
+  }
+}
