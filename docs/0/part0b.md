@@ -614,7 +614,9 @@ The world of JavaScript develops fast, which brings its own set of challenges. T
 
 You will suffer from JavaScript fatigue yourself during this course. Fortunately for us, there are a few ways to smooth the learning curve, and we can start with coding instead of configuration. We can't avoid configuration completely, but we can merrily push ahead in the next few weeks while avoiding the worst of configuration hells.
 
-::: tip <h3>Exercises 0.1.-0.6.</h3>
+<br/>
+
+::: tip <h3>Exercises 0.1. - 0.6.</h3>
 
   <h4>0.1: HTML</h4>
 

@@ -2,8 +2,6 @@
 
 ![](/docs/.vuepress/public/images/home.png)
 
-<br/>
-
 ## About
 
 This repository contains the source code for a fullstack web development course which is based on University of Helsinki's [Fullstack Open Curriculum](https://fullstackopen.com/en/) teaching React, Redux, Node.js, MongoDB, GraphQL and TypeScript among others. The source code for the original course can be found [here](https://github.com/fullstack-hy2020/fullstack-hy2020.github.io).

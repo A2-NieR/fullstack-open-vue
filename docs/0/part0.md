@@ -2,8 +2,8 @@
 lang: en-US
 sidebar: false
 next:
-  text: Skip to Part 1
-  link: /1/part1.html
+  text: A - General Info
+  link: /0/part0a.html
 ---
 
 # [Content](/content.html) / Part 0

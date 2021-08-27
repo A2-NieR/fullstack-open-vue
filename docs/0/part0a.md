@@ -1,6 +1,9 @@
 ---
 lang: en-US
 title: General Info
+prev:
+  text: Part 0 - ToC
+  link: /0/part0.html
 next:
   text: B - Fundamentals of web apps
   link: /0/part0b.html
@@ -47,7 +50,7 @@ Using the [Chrome browser](https://www.google.com/chrome/) is recommended for th
 
 To save your progress during exercises it is recommended to use Git. For instructions, see [Git and GitHub tutorial for beginners](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners).
 
-Install some sensible text editor that supports web development. [Visual Studio Code](https://code.visualstudio.com/) is highly recommended.
+Install some sensible text editor that supports web development. [Visual Studio Code](https://code.visualstudio.com/) is highly recommended. A lot of Vue developers use the VS Code extension [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) which includes handy features like syntax highlighting and autocompletion, though it is generally recommended to type everything manually for a better learning effect.
 
 Don't code with Nano, Notepad or Gedit. NetBeans isn't very good for web development either. It is also rather heavy in comparison to Visual Studio Code.
 
