@@ -4,9 +4,9 @@ title: Fundamentals of web apps
 prev:
   text: A - General info
   link: /0/part0a.html
-next:
-  text: Part 1
-  link: /1/part1.html
+# next:
+#   text: Part 1
+#   link: /1/part1.html
 ---
 
 # [Content](/content.html) / [Part 0](/0/part0.html) / Fundamentals of web apps

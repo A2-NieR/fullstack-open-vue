@@ -41,8 +41,7 @@ You are expected to do <i>at least</i> all of the exercises that are not marked 
 
 ### Course credits and certificate
 
-In the original course University of Helsinki provided the option to submit exercises and get a certificate after completing the course.
-Since this version is not by University of Helsinki, this option is not provided.
+In the original course University of Helsinki enabled students to submit exercises to their system and get a certificate upon completion of the course. Since this version is not maintained by University of Helsinki, this option is not provided.
 
 ### Before you start
 

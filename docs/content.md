@@ -5,6 +5,10 @@ title: Course content
 
 # Course content
 
+_The adaptation of the original course is an ongoing process, the material is subject to change. To keep the integrity of the initial curriculum, the base structure remains largely the same, only selected subtopics might change to better fit the Vue ecosystem._
+
+<br/>
+
 ## [Part 0 - Fundamentals of web apps](/0/part0.html)
 
 <div style="text-align:center; position:relative;">
@@ -111,13 +115,13 @@ So far, we have placed the application's state and state logic directly inside V
 
 <br/>
 
-## Part 7 - Vue Router, Lifecycle hooks, styling apps with CSS and webpack
+## Part 7 - Vue Router, Composition API, styling apps with CSS and webpack
 
 <div style="text-align:center; position:relative;">
     <img src="/images/topics/7.png" alt="webpack logo" width="25%" style="padding-top:2rem;"/>
 </div>
 
-The seventh part of the course touches on several different themes. First, we'll get familiar with Vue Router. Vue router helps us divide the application into different views that are shown based on the URL in the browser's address bar. After this, we'll look at a few more ways to add CSS-Styles to Vue applications. During the entire course we've used the Vue CLI to generate the body of our applications. This time we'll take a look under the hood: We will learn how Webpack works and how we can use it to configure the application ourselves. We shall also have a look on lifecycle hooks.
+The seventh part of the course touches on several different themes. First, we'll get familiar with Vue Router. Vue router helps us divide the application into different views that are shown based on the URL in the browser's address bar. In Version 3 Vue introduced the Composition API, which offers an alternative way to develop and structure components. We will take a closer look how to use it and show the differences to the Option API we used until this point. After this, we'll look at a few more ways to add CSS-Styles to Vue applications. During the entire course we've used the Vue CLI to generate the body of our applications. This time we'll take a look under the hood: We will learn how Webpack works and how we can use it to configure the application ourselves. We shall also have a look on lifecycle hooks.
 
 <div style="text-align:center; position:relative;">
   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="orangered" class="bi bi-x-octagon-fill" viewBox="0 0 16 16">
