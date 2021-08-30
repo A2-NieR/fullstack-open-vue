@@ -676,4 +676,4 @@ Create a diagram depicting the situation where the user goes to the [single page
 Create a diagram depicting the situation where the user creates a new note using the single page version of the app.
 :::
 
-<ProposeChange goTo="https://github.com/BunnyTheLifeguard/fullstack-open-vue/edit/source/docs/.vuepress/0/part0b.md" />
+<ProposeChange goTo="https://github.com/BunnyTheLifeguard/fullstack-open-vue/edit/main/docs/0/part0b.md" />

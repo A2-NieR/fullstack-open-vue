@@ -63,4 +63,4 @@ If you find a typo in the material, or something has been expressed unclearly, o
 
 At the bottom of each part of the material is a link to <em>propose changes to material</em>. You can edit the source code of the page by clicking on the link.
 
-<ProposeChange goTo="https://github.com/BunnyTheLifeguard/fullstack-open-vue/edit/source/docs/.vuepress/0/part0a.md" />
+<ProposeChange goTo="https://github.com/BunnyTheLifeguard/fullstack-open-vue/edit/main/docs/0/part0a.md" />

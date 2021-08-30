@@ -10,7 +10,7 @@ For this version of the course mostly the frontend parts were rewritten to show 
 
 <br/>
 
-## Website
+## [Website](https://fullstackopen-vue.netlify.app/) [![Netlify Status](https://api.netlify.com/api/v1/badges/c5345753-0855-4892-aa26-cd583879a9fb/deploy-status)](https://app.netlify.com/sites/fullstackopen-vue/deploys)
 
 The content of the website is generated from markdown documents using [VuePress v2](https://v2.vuepress.vuejs.org/) for static site generation. [Vite](https://vitejs.dev/) is used as a bundler during development.
 The website also contains a searchbar, a darkmode and a "go to top"-button.
