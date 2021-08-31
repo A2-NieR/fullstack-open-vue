@@ -3,7 +3,7 @@
 <br/>
 
 <div align="center">
-  <a href="https://fullstackopen-vue.netlify.app/" target="_blank">   
+  <a href="https://fullstackopen-vue.netlify.app/">   
     
   ![Website](https://img.shields.io/website?url=https%3A%2F%2Ffullstackopen-vue.netlify.app%2F)
   </a>
