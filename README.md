@@ -4,12 +4,10 @@
 
 <div align="center">
   <a href="https://fullstackopen-vue.netlify.app/">   
-    
-  ![Website](https://img.shields.io/website?url=https%3A%2F%2Ffullstackopen-vue.netlify.app%2F)
+  <img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Ffullstackopen-vue.netlify.app%2F">
+  <img alt="Netlify" src="https://img.shields.io/netlify/c5345753-0855-4892-aa26-cd583879a9fb">
+  <img alt="Maintenance" src="https://img.shields.io/maintenance/yes/2021">
   </a>
-![Netlify](https://img.shields.io/netlify/c5345753-0855-4892-aa26-cd583879a9fb)
-![Maintenance](https://img.shields.io/maintenance/yes/2021)
-
 </div>
 
 ![](/docs/.vuepress/public/images/home.png)
