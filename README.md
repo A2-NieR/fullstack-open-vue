@@ -1,9 +1,13 @@
 # Fullstack Open - Vue Edition
 
-<div align="center">
+<br/>
 
+<div align="center">
+  <a href="https://fullstackopen-vue.netlify.app/" target="_blank">   
+    
+  ![Website](https://img.shields.io/website?url=https%3A%2F%2Ffullstackopen-vue.netlify.app%2F)
+  </a>
 ![Netlify](https://img.shields.io/netlify/c5345753-0855-4892-aa26-cd583879a9fb)
-![Website](https://img.shields.io/website?url=https%3A%2F%2Ffullstackopen-vue.netlify.app%2F)
 ![Maintenance](https://img.shields.io/maintenance/yes/2021)
 
 </div>
