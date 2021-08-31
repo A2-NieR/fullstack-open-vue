@@ -16,11 +16,21 @@
 
 This repository contains the source code for a fullstack web development course which is based on University of Helsinki's [Fullstack Open Curriculum](https://fullstackopen.com/en/) teaching React, Redux, Node.js, MongoDB, GraphQL and TypeScript among others. The source material for the original course can be found [here](https://github.com/fullstack-hy2020/fullstack-hy2020.github.io).
 
-For this version of the course mostly the frontend parts were rewritten to show the same frontend concepts/equivalents using Vue.js.
+For this version of the course mostly the frontend parts were rewritten to show the same frontend concepts/equivalents using the Vue ecosystem, i.a.:
 
-<br/>
 
-## [Website](https://fullstackopen-vue.netlify.app/)
+<div align="center">
+
+  ![](https://api.iconify.design/logos:vue.svg) Vue.JS  
+  ![](https://api.iconify.design/logos:nodejs-icon.svg) Node.JS  
+  ![](https://api.iconify.design/simple-icons:express.svg) Express  
+  ![](https://api.iconify.design/vscode-icons:file-type-mongo.svg) MongoDB  
+  ![](https://api.iconify.design/logos:graphql.svg) GraphQL  
+  ![](https://api.iconify.design/logos:typescript-icon.svg) TypeScript  
+ 
+</div>
+
+## Website
 
 The content of the website is generated from markdown documents using [VuePress v2](https://v2.vuepress.vuejs.org/) for static site generation. [Vite](https://vitejs.dev/) is used as a bundler during development.
 The website also contains a searchbar, a darkmode and a "go to top"-button.
