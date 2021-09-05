@@ -104,13 +104,13 @@ const getFrontPageHtml = (noteCount) => {
         </div>
       </body>
     </html>
-`;
-};
+`
+}
 
 app.get('/', (req, res) => {
-  const page = getFrontPageHtml(notes.length);
-  res.send(page);
-});
+  const page = getFrontPageHtml(notes.length)
+  res.send(page)
+})
 ```
 
 You don't have to understand the code just yet.
@@ -141,29 +141,29 @@ The [head](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)-secti
 The JavaScript code looks as follows:
 
 ```js
-var xhttp = new XMLHttpRequest();
+var xhttp = new XMLHttpRequest()
 
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
-    const data = JSON.parse(this.responseText);
-    console.log(data);
+    const data = JSON.parse(this.responseText)
+    console.log(data)
 
-    var ul = document.createElement('ul');
-    ul.setAttribute('class', 'notes');
+    var ul = document.createElement('ul')
+    ul.setAttribute('class', 'notes')
 
     data.forEach(function(note) {
-      var li = document.createElement('li');
+      var li = document.createElement('li')
 
-      ul.appendChild(li);
-      li.appendChild(document.createTextNode(note.content));
-    });
+      ul.appendChild(li)
+      li.appendChild(document.createTextNode(note.content))
+    })
 
-    document.getElementById('notes').appendChild(ul);
+    document.getElementById('notes').appendChild(ul)
   }
-};
+}
 
-xhttp.open('GET', '/data.json', true);
-xhttp.send();
+xhttp.open('GET', '/data.json', true)
+xhttp.send()
 ```
 
 The details of the code are not important right now, but some code has been included to spice up the images and the text. We will properly start coding in [part 1](/1/part1.html). The sample code in this part is actually not relevant at all to the coding techniques of this course.
@@ -175,8 +175,8 @@ Immediately after fetching the <i>script</i> tag, the browser begins to execute 
 The last two lines define that the browser does an HTTP GET request to the server's address <i>/data.json</i>:
 
 ```js
-xhttp.open('GET', '/data.json', true);
-xhttp.send();
+xhttp.open('GET', '/data.json', true)
+xhttp.send()
 ```
 
 This is the bottom-most request shown on the Network tab.
@@ -195,38 +195,38 @@ So, the JavaScript code of the notes page above downloads the JSON-data containi
 This is done by the following code:
 
 ```js
-const data = JSON.parse(this.responseText);
-console.log(data);
+const data = JSON.parse(this.responseText)
+console.log(data)
 
-var ul = document.createElement('ul');
-ul.setAttribute('class', 'notes');
+var ul = document.createElement('ul')
+ul.setAttribute('class', 'notes')
 
 data.forEach(function(note) {
-  var li = document.createElement('li');
+  var li = document.createElement('li')
 
-  ul.appendChild(li);
-  li.appendChild(document.createTextNode(note.content));
-});
+  ul.appendChild(li)
+  li.appendChild(document.createTextNode(note.content))
+})
 
-document.getElementById('notes').appendChild(ul);
+document.getElementById('notes').appendChild(ul)
 ```
 
 The code first creates an unordered list with a [ul](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul)-tag...
 
 ```js
-var ul = document.createElement('ul');
-ul.setAttribute('class', 'notes');
+var ul = document.createElement('ul')
+ul.setAttribute('class', 'notes')
 ```
 
 ...and then adds one [li](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)-tag for each note. Only the <i>content</i> field of each note becomes the contents of the li-tag. The timestamps found in the raw data are not used for anything here.
 
 ```js
 data.forEach(function(note) {
-  var li = document.createElement('li');
+  var li = document.createElement('li')
 
-  ul.appendChild(li);
-  li.appendChild(document.createTextNode(note.content));
-});
+  ul.appendChild(li)
+  li.appendChild(document.createTextNode(note.content))
+})
 ```
 
 Now open the <i>Console</i>-tab on your Developer Console:
@@ -240,8 +240,8 @@ By clicking the little triangle at the beginning of the line, you can expand the
 This output on the console is caused by the <em>console.log</em> command in the code:
 
 ```js
-const data = JSON.parse(this.responseText);
-console.log(data);
+const data = JSON.parse(this.responseText)
+console.log(data)
 ```
 
 So, after receiving data from the server, the code prints it to the console.
@@ -253,14 +253,14 @@ The <i>Console</i> tab and the <em>console.log</em> command will become very fam
 The structure of this code is a bit odd:
 
 ```js
-var xhttp = new XMLHttpRequest();
+var xhttp = new XMLHttpRequest()
 
 xhttp.onreadystatechange = function() {
   // code that takes care of the server response
-};
+}
 
-xhttp.open('GET', '/data.json', true);
-xhttp.send();
+xhttp.open('GET', '/data.json', true)
+xhttp.send()
 ```
 
 The request to the server is sent on the last line, but the code to handle the response can be found further up. What's going on?
@@ -276,7 +276,7 @@ xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     // code that takes care of the server response
   }
-};
+}
 ```
 
 The mechanism of invoking event handlers is very common in JavaScript. Event handler functions are called [callback](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function) functions. The application code does not invoke the functions itself, but the runtime environment - the browser, invokes the function at an appropriate time, when the <i>event</i> has occurred.
@@ -316,20 +316,20 @@ The JavaScript code introduced in the previous chapter used the DOM-API to add a
 The following code creates a new node to the variable <em>ul</em>, and adds some child nodes to it:
 
 ```js
-var ul = document.createElement('ul');
+var ul = document.createElement('ul')
 
 data.forEach(function(note) {
-  var li = document.createElement('li');
+  var li = document.createElement('li')
 
-  ul.appendChild(li);
-  li.appendChild(document.createTextNode(note.content));
-});
+  ul.appendChild(li)
+  li.appendChild(document.createTextNode(note.content))
+})
 ```
 
 Finally, the tree branch of the <em>ul</em> variable is connected to its proper place in the HTML tree of the whole page:
 
 ```js
-document.getElementById('notes').appendChild(ul);
+document.getElementById('notes').appendChild(ul)
 ```
 
 ### Manipulating the document-object from console
@@ -343,20 +343,20 @@ Let's add a new note to the page from the console.
 First, we'll get the list of notes from the page. The list is in the first ul-element of the page:
 
 ```js
-list = document.getElementsByTagName('ul')[0];
+list = document.getElementsByTagName('ul')[0]
 ```
 
 Then create a new li-element and add some text content to it:
 
 ```js
-newElement = document.createElement('li');
-newElement.textContent = 'Page manipulation from console is easy';
+newElement = document.createElement('li')
+newElement.textContent = 'Page manipulation from console is easy'
 ```
 
 And add the new li-element to the list:
 
 ```js
-list.appendChild(newElement);
+list.appendChild(newElement)
 ```
 
 ![](/images/0/16e.png)
@@ -455,10 +455,10 @@ app.post('/new_note', (req, res) => {
   notes.push({
     content: req.body.note,
     date: new Date()
-  });
+  })
 
-  return res.redirect('/notes');
-});
+  return res.redirect('/notes')
+})
 ```
 
 Data is sent as the [body](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) of the POST-request.
@@ -471,7 +471,7 @@ The server creates a new note object, and adds it to an array called <em>notes</
 notes.push({
   content: req.body.note,
   date: new Date()
-});
+})
 ```
 
 The Note objects have two fields: <i>content</i> containing the actual content of the note, and <i>date</i> containing the date and time the note was created.
@@ -537,20 +537,20 @@ The SPA version of the app does not send the form data in the traditional way, b
 We'll look into this code a bit, even though understanding all the details of it is not important just yet.
 
 ```js
-var form = document.getElementById('notes_form');
+var form = document.getElementById('notes_form')
 form.onsubmit = function(e) {
-  e.preventDefault();
+  e.preventDefault()
 
   var note = {
     content: e.target.elements[0].value,
     date: new Date()
-  };
+  }
 
-  notes.push(note);
-  e.target.elements[0].value = '';
-  redrawNotes();
-  sendToServer(note);
-};
+  notes.push(note)
+  e.target.elements[0].value = ''
+  redrawNotes()
+  sendToServer(note)
+}
 ```
 
 The command <em>document.getElementById('notes_form')</em> instructs the code to fetch the form-element from the page, and to register an <i>event handler</i> to handle the form submit event. The event handler immediately calls the method <em>e.preventDefault()</em> to prevent the default handling of form submit. The default method would send the data to the server and cause a new GET request, which we don't want to happen.
@@ -561,13 +561,13 @@ The code for sending the note to the server is as follows:
 
 ```js
 var sendToServer = function(note) {
-  var xhttpForPost = new XMLHttpRequest();
+  var xhttpForPost = new XMLHttpRequest()
   // ...
 
-  xhttpForPost.open('POST', '/new_note_spa', true);
-  xhttpForPost.setRequestHeader('Content-type', 'application/json');
-  xhttpForPost.send(JSON.stringify(note));
-};
+  xhttpForPost.open('POST', '/new_note_spa', true)
+  xhttpForPost.setRequestHeader('Content-type', 'application/json')
+  xhttpForPost.send(JSON.stringify(note))
+}
 ```
 
 The code determines that the data is to be sent with an HTTP POST request and the data type is to be JSON. The data type is determined with a <i>Content-type</i> header. Then the data is sent as JSON-string.
@@ -676,4 +676,4 @@ Create a diagram depicting the situation where the user goes to the [single page
 Create a diagram depicting the situation where the user creates a new note using the single page version of the app.
 :::
 
-<ProposeChange goTo="https://github.com/BunnyTheLifeguard/fullstack-open-vue/edit/main/docs/0/part0b.md" />
+<ProposeChange goTo="https://github.com/BunnyTheLifeguard/fullstack-open-vue/edit/master/docs/0/part0b.md" />
