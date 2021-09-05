@@ -1,6 +1,7 @@
 {
   "name": "fullstack-open-vue",
-  "packageManager": "yarn@3.0.1",
+  "license": "CC BY-NC-SA 3.0",
+  "packageManager": "yarn@latest",
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
