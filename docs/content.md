@@ -3,6 +3,8 @@ lang: en-US
 title: Course content
 ---
 
+<!-- markdownlint-disable -->
+
 # Course content
 
 _The adaptation of the original course is an ongoing process, the material is subject to change. To keep the integrity of the initial curriculum, the base structure remains largely the same, only selected subtopics might change to better fit the Vue ecosystem._
