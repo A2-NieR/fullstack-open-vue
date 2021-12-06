@@ -6,7 +6,7 @@
   <a href="https://fullstackopen-vue.netlify.app/">   
   <img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Ffullstackopen-vue.netlify.app%2F">
   <img alt="Netlify" src="https://img.shields.io/netlify/c5345753-0855-4892-aa26-cd583879a9fb">
-  <img alt="Maintenance" src="https://img.shields.io/maintenance/yes/2021">
+  <img alt="Maintenance" src="https://img.shields.io/maintenance/no/2021">
   </a>
 </div>
 
@@ -17,7 +17,6 @@
 This repository contains the source code for a fullstack web development course which is based on University of Helsinki's [Fullstack Open Curriculum](https://fullstackopen.com/en/) teaching React, Redux, Node.js, MongoDB, GraphQL and TypeScript among others. The source material for the original course can be found [here](https://github.com/fullstack-hy2020/fullstack-hy2020.github.io).
 
 For this version of the course mostly the frontend parts were rewritten to show the same frontend concepts/equivalents in the Vue ecosystem, i.a.:
-
 
 <div align="center">
   <b>
